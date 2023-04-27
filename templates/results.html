@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">{{ title }}:</h5>
+          {% if num_queries %}
+            <p>Number of queries: {{ num_queries }}</p>
+          {% elif file_name %}
+            <p>File Name Containing The Searched Keyword {{ keyword }} is  {{ file_name }}</p>
+          {% else %}
+            <p>No Results Found</p>
+          {% endif %}
+			</div>
+		</div>
+	</div>
+
+	<!-- Include Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
