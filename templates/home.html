@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">Search Engine - Task1</h5>
+				<form action="{{ url_for('search') }}" method="POST">
+					<div class="form-group">
+						<input type="text" name="query" placeholder="Enter your search query" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-primary">Search</button>
+				</form>
+			</div>
+		</div>
+        <div class="card">
+			<div class="card-body">
+				<h5 class="card-title">Search Engine - Task2</h5>
+				<form action="{{ url_for('text_search') }}" method="POST">
+					<div class="form-group">
+						<input type="text" name="keyword" placeholder="Enter your search for keyword" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-primary">Text Search</button>
+				</form>
+			</div>
+		</div>
+        <div class="card">
+			<div class="card-body">
+				<h5 class="card-title">Search Engine - Bonus</h5>
+				<form action="{{ url_for('confluence_search') }}" method="POST">
+					<div class="form-group">
+						<input type="text" name="keyword" placeholder="Enter your search for keyword" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-primary">Text Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Include Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
