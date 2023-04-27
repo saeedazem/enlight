@@ -13,7 +13,7 @@ How to run the web app:
 3) A web page with 3 cards will be open, each card for each part of assignment that contains title, text box and button
 3.1) The Card with title "Search Engine - Task1" is about part1 so if you enter text and press the button another web page will be open(render template of file 'results.html') with the results page shownig the number of queries asked in real time on the screen.
 3.2) The Card with title "Search Engine - Task2" is about part2 so if you enter keyword and press the button another web page will be open(render template of file 'results.html') with the results page displaying if the keyword exists in the database text files in firebase
-3.1) The Card with title "Search Engine - Bonus" is about bonus so if you enter keyword and press the button another web page will be open(render template of file 'results.html') with the results page displaying if the keyword exists in confluence pages in space 'Exercise'
+3.3) The Card with title "Search Engine - Bonus" is about bonus so if you enter keyword and press the button another web page will be open(render template of file 'results.html') with the results page displaying if the keyword exists in confluence pages in space 'Exercise'
 
 General Notes:
 1) firebase is the technology used for the database, i used one nosql Realtime Database with two json objects, one for part1 with key 'queries' containing a list of all words that got searched(the key for it is random string and the value is the searched word), 
