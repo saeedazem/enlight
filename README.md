@@ -11,7 +11,7 @@ How to run the web app:
 1) run the command "flask --app task.py run" (or for dev mode: "flask --app example_app.py --debug run")
 2) To connect to the web app GUI got the browser and eneter the url link: http://127.0.0.1:5000/ , it will render the template of file 'home.html'
 3) A web page with 3 cards will be open, each card for each part of assignment that contains title, text box and button
-3.1) The Card with title "Search Engine - Task1" is about part1 so if you enter text and press the button another web page will be open(render template of file 'results.html') with the results page shownig the number of queries asked in real time on the screen.
+3.1.) The Card with title "Search Engine - Task1" is about part1 so if you enter text and press the button another web page will be open(render template of file 'results.html') with the results page shownig the number of queries asked in real time on the screen.
 3.2) The Card with title "Search Engine - Task2" is about part2 so if you enter keyword and press the button another web page will be open(render template of file 'results.html') with the results page displaying if the keyword exists in the database text files in firebase
 3.1) The Card with title "Search Engine - Bonus" is about bonus so if you enter keyword and press the button another web page will be open(render template of file 'results.html') with the results page displaying if the keyword exists in confluence pages in space 'Exercise'
 
